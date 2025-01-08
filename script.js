@@ -36,23 +36,23 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("resize", updateBanner);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+//document.addEventListener("DOMContentLoaded", function() {
     // Function to handle "Show more" button click
-    document.querySelectorAll('#show-more-1').forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default link behavior
-            const parent = this.parentElement;
+  //  document.querySelectorAll('#show-more-1').forEach(button => {
+      //  button.addEventListener('click', function(e) {
+    //        e.preventDefault(); // Prevent default link behavior
+        //    const parent = this.parentElement;
 
-            const additionalContent = document.createElement('span');
-            additionalContent.classList.add('para');
-            additionalContent.innerHTML = "<br><br>With the support of his students, well-wishers, and music enthusiasts, he took the next step and founded <strong>Jai Sathguru Fine Arts</strong> in the Madanandapuram locality of Porur. The sabha began modestly, operating from a small space with a capacity of 30–40 people. Despite its size, the sabha has hosted a variety of cultural activities, including chamber concerts, lec-dems (lectures and demonstrations), competitions, and practice sessions.<br><br>In just three months, the response to the sabha has been overwhelmingly positive. Encouraged by this, the sabha is now looking to expand its reach to the general public.<br><br>To mark its new phase, Jai Sathguru Fine Arts hosted its <strong>first public concert</strong> at the <strong>Sri Durga Lakshmi Saraswati Temple</strong> in Santhosh Nagar, Madanandapuram, Chennai. The concert featured the esteemed Smt. Gayathri Venkatragavan, a star musician, whose performance was met with great appreciation. She was accompanied by the legendary violinist M.R. Gopinath, with Shri A.V. Manikantaan himself playing the mridangam, and Sri Sainath supporting on the ghatam. <br><br>The concert was attended by a large number of local music lovers who stayed throughout the performance, further solidifying the sabha's role in nurturing and promoting the musical arts in the community. <br><br>Jai Sathguru Fine Arts Sabha is steadily growing, and with its commitment to cultural enrichment and music education, it aims to become a prominent institution in the local and global arts scene.";
+          //  const additionalContent = document.createElement('span');
+            //additionalContent.classList.add('para');
+            //additionalContent.innerHTML = "<br><br>With the support of his students, well-wishers, and music enthusiasts, he took the next step and founded <strong>Jai Sathguru Fine Arts</strong> in the Madanandapuram locality of Porur. The sabha began modestly, operating from a small space with a capacity of 30–40 people. Despite its size, the sabha has hosted a variety of cultural activities, including chamber concerts, lec-dems (lectures and demonstrations), competitions, and practice sessions.<br><br>In just three months, the response to the sabha has been overwhelmingly positive. Encouraged by this, the sabha is now looking to expand its reach to the general public.<br><br>To mark its new phase, Jai Sathguru Fine Arts hosted its <strong>first public concert</strong> at the <strong>Sri Durga Lakshmi Saraswati Temple</strong> in Santhosh Nagar, Madanandapuram, Chennai. The concert featured the esteemed Smt. Gayathri Venkatragavan, a star musician, whose performance was met with great appreciation. She was accompanied by the legendary violinist M.R. Gopinath, with Shri A.V. Manikantaan himself playing the mridangam, and Sri Sainath supporting on the ghatam. <br><br>The concert was attended by a large number of local music lovers who stayed throughout the performance, further solidifying the sabha's role in nurturing and promoting the musical arts in the community. <br><br>Jai Sathguru Fine Arts Sabha is steadily growing, and with its commitment to cultural enrichment and music education, it aims to become a prominent institution in the local and global arts scene.";
 
             // Append the new content and hide the button
-            parent.appendChild(additionalContent);
-            this.style.display = 'none'; // Hide the "Show more" button
-        });
-    });
-});
+            //parent.appendChild(additionalContent);
+            //this.style.display = 'none'; // Hide the "Show more" button
+      //  });
+    //});
+//});
 
 document.addEventListener("DOMContentLoaded", function() {
     // Function to handle "Show more" button click
