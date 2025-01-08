@@ -1,3 +1,11 @@
+// redirect.js
+
+// Check if the current URL is not 'index.html' or the root '/'
+if (window.location.pathname !== '/index.html' && window.location.pathname !== '/') {
+    // Redirect to 'index.html'
+    window.location.href = '/index.html';
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const hamburger = document.getElementById("hamburger");
     const navList = document.getElementById("nav-list");
