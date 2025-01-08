@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
             banner.src = "images/banner3.png";
         } else if (window.innerWidth <= 1200) {
             // Tablet viewport
-            banner.src = "images/banner2.png";
+            banner.src = "images/banner1.png";
         } else {
             // Desktop viewport
             banner.src = "images/banner1.png";
