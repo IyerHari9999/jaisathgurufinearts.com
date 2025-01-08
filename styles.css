@@ -6,6 +6,10 @@
 	scroll-padding-top: 88px;
 }
 
+html {
+            scroll-behavior: smooth; /* Smooth scroll behavior */
+        }
+
 body{
 	background:#FFF7EF;
 }
