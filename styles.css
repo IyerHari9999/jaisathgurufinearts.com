@@ -110,6 +110,9 @@
          padding: 16px 0px;
          box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.1);
     }
+     .video-player {
+          max-width: 100%;
+     }
      .nav-list.active {
          display: flex;
     }
