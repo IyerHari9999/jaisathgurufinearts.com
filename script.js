@@ -53,6 +53,10 @@ document.addEventListener("DOMContentLoaded", function() {
       //  });
     //});
 //});
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleLink = document.getElementById('toggleLink');
+    toggleLink.addEventListener('click', toggleContent);
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     // Function to handle "Show more" button click
@@ -99,21 +103,23 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
 }
-function toggleContent() {
-            var moreContent = document.getElementById('moreContent');
-            var toggleLink = document.getElementById('toggleLink');
+function toggleContent(event) {
+    var moreContent = document.getElementById('moreContent');
+    var toggleLink = document.getElementById('toggleLink');
 
-            // Check if the content is currently hidden or visible
-            if (moreContent.style.display === 'none' || moreContent.style.display === '') {
-                moreContent.style.display = 'block';
-                toggleLink.textContent = 'Show Less'; // Change link text to 'Show Less'
-                toggleLink.classList.remove('show-more');
-                toggleLink.classList.add('show-less');
-            } else {
-                moreContent.style.display = 'none';
-                toggleLink.textContent = 'Show More'; // Change link text to 'Show More'
-                toggleLink.classList.remove('show-less');
-                toggleLink.classList.add('show-more');
-            }
-        }
-document.getElementById('toggleLink').addEventListener('click', toggleContent);
+    // Prevent the default behavior of the <a> tag (page jump)
+    event.preventDefault();
+
+    // Check if the content is currently hidden or visible
+    if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+        moreContent.style.display = 'block'; // Show the content
+        toggleLink.textContent = 'Show Less'; // Change the link text to "Show Less"
+        toggleLink.classList.remove('show-more');
+        toggleLink.classList.add('show-less');
+    } else {
+        moreContent.style.display = 'none'; // Hide the content
+        toggleLink.textContent = 'Show More'; // Change the link text back to "Show More"
+        toggleLink.classList.remove('show-less');
+        toggleLink.classList.add('show-more');
+    }
+}
